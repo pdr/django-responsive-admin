@@ -1,0 +1,104 @@
+body {
+	border-top: 5px solid #417690;
+}
+
+ul {
+	margin-left: 0px;
+	list-style:none;
+}
+
+#header {
+	padding-top:15px;
+}
+
+#container {
+	margin: auto;
+	max-width: 1060px;
+	padding: 0 15px;
+}
+
+.compact td, .compact th {
+	padding: 0.25em 0.5em;
+}
+
+table.hovered tbody tr:hover th {
+  background-color: #f6f6f6;
+}
+
+.breadcrumbs {
+	margin-bottom: 0;
+}
+
+.forms.columnar label {
+	width:175px;
+	padding-top:2px;
+}
+
+#changelist .actions span.all,
+#changelist .actions span.action-counter,
+#changelist .actions span.clear,
+#changelist .actions span.question {
+	display:none;
+}
+
+.align-right {
+	text-align: right;
+}
+
+#changelist-filter span {
+	font-weight:bold;
+}
+
+#changelist-filter li.selected a {
+	color:#000;
+	text-decoration: none;
+}
+
+div.actions {
+	margin-bottom:15px;
+}
+
+td img {
+	vertical-align: middle;
+}
+
+#result_list thead {
+	background-color: #f6f6f6;
+}
+
+th.action-checkbox-column {
+	width: 1em;
+}
+
+div.selector {
+	margin-left:170px;
+	height:200px;
+	clear: both;
+}
+
+.selector h2 {
+	font-size: 1em;
+}
+
+.selector select{
+	width:200px;
+	height:100px;
+}
+
+div.selector-available, div.selector-chosen, ul.selector-chooser {
+	float:left;
+	margin-right:20px;
+}
+
+ul.selector-chooser {
+	padding-top:50px;
+}
+
+
+div.selector-chose:after {
+	clear: both;
+}
+
+.selector a {
+	display:block;
+}

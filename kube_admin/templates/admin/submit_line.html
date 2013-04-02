@@ -1,0 +1,15 @@
+{% load i18n admin_urls %}
+<div class="row">
+<div class="fifth">
+{% if show_delete_link %}<button class="btn red" href="{% url opts|admin_urlname:'delete' original.pk|admin_urlquote %}" class="deletelink">{% trans "Delete" %}</button>{% endif %}
+</div>
+
+<div class="fourfifth pull-right align-right">{% if show_save_and_continue %}<input class="btn" type="submit" value="{% trans 'Save and continue editing' %}" name="_continue" />{% endif %}
+
+{% if show_save_as_new %}<input class="btn" type="submit" value="{% trans 'Save as new' %}" name="_saveasnew" />{%endif%}
+
+{% if show_save_and_add_another %}<input class="btn" type="submit" value="{% trans 'Save and add another' %}" name="_addanother" />{% endif %}
+
+{% if show_save %}<input class="btn green" type="submit" value="{% trans 'Save' %}" class="default" name="_save" />{% endif %}
+</div>
+</div>

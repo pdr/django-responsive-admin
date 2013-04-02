@@ -1,0 +1,37 @@
+<fieldset class="{{ fieldset.classes }}">
+    {% if fieldset.name %}<legend>{{ fieldset.name }}</legend>{% endif %}
+    {% if fieldset.description %}
+        <div class="description">{{ fieldset.description|safe }}</div>
+    {% endif %}
+    <ul>
+    {% for line in fieldset %}
+        <li class="form-row{% if line.fields|length_is:'1' and line.errors %} errors{% endif %}{% for field in line %}{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% endfor %}">
+            {% if line.fields|length_is:'1' %}{{ line.errors }}{% endif %}
+            {% for field in line %}
+                {% if not line.fields|length_is:'1' %}<div class="field-box{% if field.field.name %} field-{{ field.field.name }}{% endif %}{% if not field.is_readonly and field.errors %} errors{% endif %}">{% endif %}
+                    {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
+                    {% if field.is_checkbox %}
+                    <fieldset>
+                        <section>
+                            {{ field.field.label }}
+                        </section>
+                            {{ field.field }}
+                    </fieldset>
+                    {% else %}
+                        <section>
+                            {{ field.label_tag }}
+                        </section>
+                        {% if field.is_readonly %}
+                            <p>{{ field.contents|linebreaksbr }}</p>
+                        {% else %}
+                            {{ field.field }}
+                        {% endif %}
+                    {% endif %}
+                    {% if field.field.help_text %}
+                        <span class="descr">{{ field.field.help_text|safe }}</span>
+                    {% endif %}
+                {% if not line.fields|length_is:'1' %}</div>{% endif %}
+            {% endfor %}
+        </li>
+    {% endfor %}
+</fieldset>
