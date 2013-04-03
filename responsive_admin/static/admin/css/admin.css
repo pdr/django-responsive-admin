@@ -167,10 +167,42 @@ ul.errorlist {
 	color: #000;
 }
 
+
 .forms.columnar li fieldset section {
 	min-width: 175px;
 }
 
+
 .forms.columnar li fieldset {
 	padding-left: 194px;
+}
+
+.calendar table {
+	margin-bottom:0.25em;
+}
+
+.calendar th, .calendar td{
+	padding: 0.25em 0.4em;
+}
+
+p.calendar-cancel {
+	margin-bottom:0;
+	text-align:center;
+}
+
+.calendar-cancel a {
+	color: #da3e5a;
+}
+
+
+a.calendarnav-next {
+	float:right;
+}
+
+
+div.calendarbox {
+	padding: 0.5em 1em;
+	border: 1px dashed #ddd;
+	border-radius: 10px;
+	background-color: #fff;
 }
