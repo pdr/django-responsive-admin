@@ -1,12 +1,13 @@
 {% load i18n admin_static %}
 <div class="inline-group" id="{{ inline_admin_formset.formset.prefix }}-group">
+
     <h2>{{ inline_admin_formset.opts.verbose_name_plural|title }}</h2>
     {{ inline_admin_formset.formset.management_form }}
     {{ inline_admin_formset.formset.non_form_errors }}
 
     {% for inline_admin_form in inline_admin_formset %}
         <div class="inline-related{% if forloop.last %} empty-form last-related{% endif %}" id="{{ inline_admin_formset.formset.prefix }}-{% if not forloop.last %}{{ forloop.counter0 }}{% else %}empty{% endif %}">
-            <h3>
+            <h3 class="subheader">
                 <b>{{ inline_admin_formset.opts.verbose_name|title }}:</b>&nbsp;
                 <span class="inline_label">
                     {% if inline_admin_form.original %}
@@ -28,6 +29,7 @@
                     </span>
                 {% endif %}
             </h3>
+
             {% if inline_admin_form.form.non_field_errors %}{{ inline_admin_form.form.non_field_errors }}{% endif %}
             {% for fieldset in inline_admin_form %}
             {% include "admin/includes/fieldset.html" %}

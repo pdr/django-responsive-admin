@@ -54,20 +54,12 @@
     {% endblock %}
     {% endif %}
 
-    {% block messages %}
-        {% if messages %}
-        <ul class="messagelist">{% for message in messages %}
-          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
-        {% endfor %}</ul>
-        {% endif %}
-    {% endblock messages %}
-
     <!-- Content -->
     <div id="content">
         {% block pretitle %}{% endblock %}
         {% block content_title %}
         {% if title %}
-        <div class="row">
+        <div id="title" class="row">
         <div class="fourfifth"><h2>{{ title }}</h2></div>
         <div class="fifth pull-right align-right">
             {% block object-tools %}{% endblock %}
@@ -75,6 +67,15 @@
         {% endif %}
     </div>
         {% endblock %}
+
+        {% block messages %}
+        {% if messages %}
+        <ul class="messagelist">{% for message in messages %}
+          <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}</ul>
+        {% endif %}
+        {% endblock messages %}
+
         {% block content %}
         {{ content }}
         {% block sidebar %}{% endblock %}

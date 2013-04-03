@@ -2,9 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-responsive-admin',
-    version='0.1',
+    version='0.1.2',
     description='A responsive admin for Django using Kube CSS',
-    long_description=open('README.rst').read(),
     author='Pierre Drescher',
     author_email='pierre.drescher@gmail.com',
     url='https://github.com/pdr/django-responsive-admin',

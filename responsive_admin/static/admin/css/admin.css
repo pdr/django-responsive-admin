@@ -30,7 +30,8 @@ table.hovered tbody tr:hover th {
 }
 
 .forms.columnar label {
-	width:175px;
+	min-width:175px;
+	width: auto;
 	padding-top:2px;
 }
 
@@ -101,4 +102,75 @@ div.selector-chose:after {
 
 .selector a {
 	display:block;
+}
+
+p.errornote {
+	color:#da3e5a;
+	font-weight: bold;
+}
+
+div.add-row {
+	margin-bottom:20px;
+}
+
+fieldset div.add-row {
+	margin-bottom:0;
+}
+
+.info {
+	color:#18a011;
+}
+
+#title h1, #title h2, #title h3, #title ul{
+	margin-bottom: 0;
+}
+
+.clearable-file-input input[type=checkbox] {
+	float:left;
+	top: 6px;
+	margin-right: 5px;
+}
+
+.forms.columnar .clearable-file-input label {
+	width:auto;
+}
+
+p.file-upload {
+	margin-bottom: 0px;
+}
+
+textarea {
+	height: 6em;
+}
+
+span.descr {
+	vertical-align: top;
+}
+
+.empty-form {
+	display: none;
+}
+
+li.errors {
+	border-left: 3px solid #da3e5a;
+}
+
+ul.errorlist {
+	color: #da3e5a;
+	margin-left: 10px;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.req, .required {
+	font-weight:bold;
+	color: #000;
+}
+
+.forms.columnar li fieldset section {
+	min-width: 175px;
+}
+
+.forms.columnar li fieldset {
+	padding-left: 194px;
 }
