@@ -90,6 +90,14 @@ div.selector-available, div.selector-chosen, ul.selector-chooser {
 	margin-right:20px;
 }
 
+div.selector input{
+	width: auto;
+}
+
+.forms.columnar div.selector label{
+	min-width: 0;
+}
+
 ul.selector-chooser {
 	padding-top:50px;
 }
@@ -204,6 +212,7 @@ div.calendarbox {
 	border: 1px dashed #ddd;
 	border-radius: 10px;
 	background-color: #fff;
+	z-index: 10;
 }
 
 
@@ -231,10 +240,17 @@ input.vDateField {
 	width: auto;
 }
 
+input.vTimeField {
+	width: auto;
+}
+
 label {
 	width:25%;
 }
 
+p.datetime {
+	margin-left:272px;
+}
 
 @media only screen and (max-width: 767px) {
 
@@ -249,6 +265,14 @@ label {
 
 	.forms.columnar li fieldset {
 		padding-left: 0px;
+	}
+
+	p.datetime {
+		margin-left: 0;
+	}
+
+	div.selector {
+		margin-left:0;
 	}
 
 }
