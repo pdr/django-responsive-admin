@@ -13,7 +13,6 @@ ul {
 
 #container {
 	margin: auto;
-	max-width: 1060px;
 	padding: 0 15px;
 }
 
@@ -31,7 +30,7 @@ table.hovered tbody tr:hover th {
 
 .forms.columnar label {
 	min-width:175px;
-	width: auto;
+	width: 25%;
 	padding-top:2px;
 }
 
@@ -174,7 +173,7 @@ ul.errorlist {
 
 
 .forms.columnar li fieldset {
-	padding-left: 194px;
+	padding-left: 27%;
 }
 
 .calendar table {
@@ -205,4 +204,51 @@ div.calendarbox {
 	border: 1px dashed #ddd;
 	border-radius: 10px;
 	background-color: #fff;
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="phone"],
+textarea {
+	width:45%;
+}
+
+input[type="text"].width-100,
+input[type="password"].width-100,
+input[type="email"].width-100,
+input[type="url"].width-100,
+input[type="phone"].width-100,
+textarea.width-100 {
+	width:98.6%;
+}
+
+
+
+input.vDateField {
+	width: auto;
+}
+
+label {
+	width:25%;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="url"],
+	input[type="phone"],
+	textarea {
+		width:98.6%;
+	}
+
+	.forms.columnar li fieldset {
+		padding-left: 0px;
+	}
+
 }

@@ -43,7 +43,7 @@
 {% endblock %}
 
 {% block content %}
-<div id="content-main">
+<div id="content-main" class="row">
 <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}action="{{ form_url }}" method="post" id="{{ opts.module_name }}_form" class="forms columnar">{% csrf_token %}{% block form_top %}{% endblock %}
 <div>
 {% if is_popup %}<input type="hidden" name="_popup" value="1" />{% endif %}
