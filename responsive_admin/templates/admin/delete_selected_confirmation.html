@@ -7,18 +7,20 @@
 {% endblock %}
 
 {% block breadcrumbs %}
-    <ul class="breadcrumb">
+<nav class="breadcrumbs">
+    <ul>
         <li>
-            <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a> <span class="divider">/</span>
+            <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
         </li>
         <li>
-            <a href="{% url 'admin:app_list' app_label=app_label %}">{{ app_label|capfirst|escape }}</a> <span class="divider">/</span>
+            <a href="{% url 'admin:app_list' app_label=app_label %}">{{ app_label|capfirst|escape }}</a>
         </li>
         <li>
-            <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a> <span class="divider">/</span>
+            <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
         </li>
-        <li class="active">{% trans 'Delete multiple objects' %}</li>
+        <li><span>{% trans 'Delete multiple objects' %}</span></li>
     </ul>
+</nav>
 {% endblock %}
 
 {% block content %}

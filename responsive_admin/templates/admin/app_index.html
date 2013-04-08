@@ -12,7 +12,7 @@
             </li>
             <li class="active">
                 {% for app in app_list %}
-                    {% blocktrans with app.name as name %}{{ name }}{% endblocktrans %}
+                    <span>{% blocktrans with app.name as name %}{{ name }}{% endblocktrans %}</span>
                 {% endfor %}
             </li>
         </ul>

@@ -54,9 +54,10 @@
     </div>
     <!-- END Header -->
     {% block breadcrumbs %}
-    <div class="breadcrumbs">
-    <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-    {% if title %} &rsaquo; {{ title }}{% endif %}
+    <nav class="breadcrumbs">
+    <ul>
+    <li><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a></li>
+    {% if title %}<li><span>{{ title }}</span></li>{% endif %}
     </div>
     {% endblock %}
     {% endif %}

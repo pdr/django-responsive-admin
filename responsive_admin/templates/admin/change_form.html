@@ -24,10 +24,10 @@
     <li>
     {% if has_change_permission %}<a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>{% else %}{{ opts.verbose_name_plural|capfirst }}{% endif %}
     </li>
-    <li>
-    {% if add %}
-    {% trans 'Add' %}{{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}{% endif %}
-    </li>
+    {% if add %}<li><span>
+    {% trans 'Add' %}{{ opts.verbose_name }}{% else %}{{ original|truncatewords:"18" }}
+    </span></li>{% endif %}
+    </ul>
 </nav>
 {% endblock %}
 {% endif %}

@@ -29,7 +29,6 @@ table.hovered tbody tr:hover th {
 }
 
 .forms.columnar label {
-	min-width:175px;
 	width: 25%;
 	padding-top:2px;
 }

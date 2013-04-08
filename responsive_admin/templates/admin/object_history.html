@@ -17,7 +17,7 @@
         <li>
             <a href="{% url opts|admin_urlname:'change' object.pk|admin_urlquote %}">{{ object|truncatewords:"18" }}</a>
         </li>
-        <li class="active">{% trans 'History' %}</li>
+        <li><span>{% trans 'History' %}</span></li>
     </ul>
 </nav>
 {% endblock %}
