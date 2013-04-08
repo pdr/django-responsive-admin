@@ -33,7 +33,7 @@ Please feel free to send bug reports or pull-requests. Next release I will be a
 Screenshots
 -----------
 
-![Screenshot 1](pdr.github.com/django-responsive-admin/img/screenshot1.png)
-![Screenshot 2](pdr.github.com/django-responsive-admin/img/screenshot2.png)
-![Screenshot 3](pdr.github.com/django-responsive-admin/img/screenshot3.png)
-![Screenshot 4](pdr.github.com/django-responsive-admin/img/screenshot4.png)
+![Screenshot 1](http://github.com/pdr/django-responsive-admin/raw/master/img/screenshot1.png)
+![Screenshot 2](http://github.com/pdr/django-responsive-admin/raw/master/img/screenshot2.png)
+![Screenshot 3](http://github.com/pdr/django-responsive-admin/raw/master/img/screenshot3.png)
+![Screenshot 4](http://github.com/pdr/django-responsive-admin/raw/master/img/screenshot4.png)
