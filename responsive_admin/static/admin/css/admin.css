@@ -141,6 +141,10 @@ fieldset div.add-row {
 	width:auto;
 }
 
+div.submitLine {
+	padding-top: 20px;
+}
+
 p.file-upload {
 	margin-bottom: 0px;
 }

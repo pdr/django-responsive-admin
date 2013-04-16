@@ -1,4 +1,4 @@
-<fieldset class="{{ fieldset.classes }}">
+<fieldset class="{{ fieldset.classes }}{% if forloop.last %}end{% endif %}">
     {% if fieldset.name %}<legend>{{ fieldset.name }}</legend>{% endif %}
     {% if fieldset.description %}
         <div class="description">{{ fieldset.description|safe }}</div>

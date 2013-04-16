@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-responsive-admin',
-    version='0.1.7',
+    version='0.2',
     description='A responsive admin for Django using Kube CSS',
     author='Pierre Drescher',
     author_email='pierre.drescher@gmail.com',

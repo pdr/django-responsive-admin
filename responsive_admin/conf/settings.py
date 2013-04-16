@@ -4,3 +4,5 @@ from django.conf import settings
 RESPONSIVE_ADMIN_CONTAINER_MAX_WIDTH = \
     getattr(settings, 'RESPONSIVE_ADMIN_CONTAINER_MAX_WIDTH', 1060)
 
+RESPONSIVE_ADMIN_FIXED_SUBMIT_LINE = \
+    getattr(settings, 'RESPONSIVE_ADMIN_FIXED_SUBMIT_LINE', True)

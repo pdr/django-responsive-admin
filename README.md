@@ -26,6 +26,9 @@ You can set the body max-width in your settings file like this:
     # Default is 1060, use 0 for full-width.
     RESPONSIVE_ADMIN_CONTAINER_MAX_WIDTH = 1280
 
+If you have models with lots of fields and don't like scrolling:
+
+	RESPONSIVE_ADMIN_FIXED_SUBMIT_LINE = True
 
 Please feel free to send bug reports or pull-requests. Next release I will be adding a simple way to build a menu.
 
