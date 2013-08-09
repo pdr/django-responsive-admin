@@ -136,5 +136,4 @@
 		allToggle: "#action-toggle",
 		selectedClass: "selected"
 	}
-	ASDF
 })(django.jQuery);
