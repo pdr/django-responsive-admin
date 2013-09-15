@@ -4,7 +4,7 @@
 {% if show_delete_link %}<a class="btn red" href="{% url opts|admin_urlname:'delete' original.pk|admin_urlquote %}" class="deletelink">{% trans "Delete" %}</a>{% endif %}
 </div>
 
-<div class="fourfifth pull-right align-right">{% if show_save_and_continue %}<input class="btn" type="submit" value="{% trans 'Save and continue editing' %}" name="_continue" />{% endif %}
+<div class="fourfifth pull-right {% if not is_popup %}align-right{% endif %}">{% if show_save_and_continue %}<input class="btn" type="submit" value="{% trans 'Save and continue editing' %}" name="_continue" />{% endif %}
 
 {% if show_save_as_new %}<input class="btn" type="submit" value="{% trans 'Save as new' %}" name="_saveasnew" />{%endif%}
 
