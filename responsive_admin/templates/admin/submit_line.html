@@ -1,5 +1,5 @@
 {% load i18n admin_urls %}
-<div class="row submitLine">
+<div class="row submitLine" style="z-index:100">
 <div class="fifth">
 {% if show_delete_link %}<a class="btn red" href="{% url opts|admin_urlname:'delete' original.pk|admin_urlquote %}" class="deletelink">{% trans "Delete" %}</a>{% endif %}
 </div>
