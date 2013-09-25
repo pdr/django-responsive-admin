@@ -72,6 +72,8 @@ th.action-checkbox-column {
 div.selector {
 	margin-left:170px;
 	height:200px;
+	overflow: auto;
+	width: 100%;
 	clear: both;
 }
 
